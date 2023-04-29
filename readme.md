@@ -51,7 +51,7 @@ git clone https://github.com/Hovo-93/zm-news-parsing.git
 ```bash
    python fill_db.py
 ```
-#### Шаг 6. Cоздание потоков на каждый профиль
+#### Шаг 6. Cоздать  потоки на каждый профиль
 ```bash
    python multiprocessing_module.py
 ```
