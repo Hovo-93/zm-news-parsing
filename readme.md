@@ -1,3 +1,4 @@
+# Задание
 Модуль SQLite
 - Создаем базу данных Profile
 - Создаем таблицу Cookie Profile:
@@ -23,3 +24,34 @@
 - Собираем профиля из таблицы Cookie Profile (кол-во потоков)
 - Используем Pool для создания потоков на каждый профиль
 - Ограничение 5 одновременных потоков
+
+## Инструкция
+
+#### Шаг 1. Клонировать репозиторий себе на компьютер
+Введите команду:
+```bash
+git clone https://github.com/Hovo-93/zm-news-parsing.git
+```
+#### Шаг 2. Установить все зависимости
+```bash
+   pip install -r requirements.txt   
+```
+
+#### Шаг 3. Скачать [GoogleChrome Driver](https://chromedriver.storage.googleapis.com/index.html?path=112.0.5615.49/)
+
+
+#### Шаг 4. Создать в клонированной директории файл .env 
+```bash
+    Указать путь к GoogleChrome драйверу 
+    
+    Пример:
+    CHROME_DRIVER_PATH=/Users/PycharmProjects/NewsInGoogle/ChromeDriver/chromedriver
+```
+#### Шаг 5. Создать базу и заполнить 15 значениями
+```bash
+   python fill_db.py
+```
+#### Шаг 6. Cоздание потоков на каждый профиль
+```bash
+   python multiprocessing_module.py
+```
